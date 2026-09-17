@@ -68,27 +68,80 @@ Insurance claim underwriting relies on accurately identifying high-risk profiles
 
 ## 🚀 How to Run Locally
 
-1. **Clone the repository:**
+Follow these step-by-step instructions to set up the project and run the application on your local machine.
 
+### Prerequisites
+
+* **Python 3.8 or higher** installed on your system.
+* **Git** installed to clone the repository.
+
+### Step 1: Clone the Repository
+
+Open your terminal or command prompt and run the following command to download the project files:
+
+```bash
 git clone [https://github.com/Anshulworld/Insurance-Claims-Prediction-with-Machine-Learning-Python-Data-Science-Project.git](https://github.com/Anshulworld/Insurance-Claims-Prediction-with-Machine-Learning-Python-Data-Science-Project.git)
 cd Insurance-Claims-Prediction-with-Machine-Learning-Python-Data-Science-Project
 
+```
+
+### Step 2: Create a Virtual Environment (Recommended)
+
+It is best practice to create a virtual environment to manage project dependencies without affecting your global Python installation.
+
+* **For Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+```
 
 
-2. **Install required dependencies:**
+* **For macOS/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+
+```
+
+
+
+### Step 3: Install Required Dependencies
+
+With your virtual environment activated, install all the necessary Python libraries required to run the models and the web app:
+
 ```bash
 pip install pandas numpy scikit-learn streamlit matplotlib seaborn
 
 ```
 
+### Step 4: Verify Model Artifacts
 
-3. **Launch the web application:**
+Ensure that the following serialized Pickle files are present in your root directory (these are required for the app to make predictions):
+
+* `claim_model.pkl`
+* `model_columns.pkl`
+* `model_options.pkl`
+
+### Step 5: Launch the Web Application
+
+Run the Streamlit server to start the interactive user interface:
+
 ```bash
 streamlit run app.py
 
 ```
 
+### Step 6: View in Browser
 
+Once the server starts, Streamlit will provide a local network URL in your terminal. Open your web browser and navigate to:
+
+```text
+http://localhost:8501
+
+```
+
+You can now interact with the UI, input applicant data, and view real-time risk predictions!
 
 ```
 
