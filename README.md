@@ -1,3 +1,4 @@
+```markdown
 # 🚗 Insurance Claims Prediction & Risk Analytics
 
 An end-to-end Machine Learning and Business Intelligence solution designed to assess policyholder risk, predict insurance claim likelihood, and assist underwriters in data-driven risk management. Deployed as an interactive web application.
@@ -31,7 +32,39 @@ Insurance claim underwriting relies on accurately identifying high-risk profiles
 ├── model_columns.pkl           # One-hot encoded feature matrix references
 ├── model_options.pkl           # Valid categorical input mappings for UI
 └── README.md                   # Project documentation
+
 ```
+
+---
+
+## 📈 Data Visualizations & Insights
+
+This section highlights key exploratory data analysis (EDA) findings and model interpretations that uncovered patterns in policyholder behavior and guided feature engineering.
+
+### 1. Claim Rates by Key Categories
+
+This visualization breaks down the frequency of claims across different vehicle segments, fuel types, models, and region codes. It helps identify which categories carry the highest baseline risk, providing initial directions for premium adjustments.
+
+
+### 2. Gaps in Claim Rates per Binary Features
+
+This chart illustrates the absolute difference in claim rates based on the presence or absence of specific binary vehicle features (e.g., speed alerts, parking sensors). It highlights which individual features act as the strongest indicators of a potential claim.
+
+
+### 3. Feature Correlation Heatmap
+
+This correlation matrix visualizes the linear relationships between continuous numerical variables and the target variable (`claim_status`). It is crucial for identifying multicollinearity (such as the high correlation between vehicle dimensions like length, width, and displacement) and streamlining the features fed into the machine learning model.
+
+
+### 4. Top 15 Feature Importance
+
+Extracted directly from our predictive model, this chart ranks the top 15 features that contribute most heavily to the model's decision-making process. This allows underwriters to quickly see exactly which variables matter most when assessing applicant risk.
+
+
+### 5. Distribution of Key Continuous Variables
+
+These histograms display the spread of critical continuous variables within our dataset, specifically analyzing `subscription_length`, `vehicle_age`, and `customer_age`. Understanding these distributions is vital for detecting skewness, understanding the core demographic of the customer base, and tailoring the data preprocessing pipeline.
+
 
 ---
 
@@ -58,10 +91,9 @@ Insurance claim underwriting relies on accurately identifying high-risk profiles
 
 ---
 
-## 📊 Key Insights & Business Value
+## 📊 Business Value
 
-* **High-Risk Segment Identification:** Identified demographic and vehicle profiles most correlated with claim frequency, allowing for better premium adjustments.
-* **Feature Importance:** Isolated the key drivers influencing claim filings (e.g., vehicle age, driver profile, policy tier), empowering underwriters to make data-backed decisions.
+* **Targeted Premium Adjustments:** Clear identification of risk segments allows for more accurate pricing models.
 * **Operational Efficiency:** The deployed Streamlit app reduces manual underwriting time by providing instant, automated risk assessments based on historical data patterns.
 
 ---
@@ -143,4 +175,6 @@ http://localhost:8501
 
 You can now interact with the UI, input applicant data, and view real-time risk predictions!
 
+```
 
+```
