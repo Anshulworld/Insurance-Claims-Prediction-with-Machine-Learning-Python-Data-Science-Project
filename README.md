@@ -1,4 +1,3 @@
-```markdown
 # 🚗 Insurance Claims Prediction & Risk Analytics
 
 An end-to-end Machine Learning and Business Intelligence solution designed to assess policyholder risk, predict insurance claim likelihood, and assist underwriters in data-driven risk management. Deployed as an interactive web application.
@@ -32,7 +31,7 @@ Insurance claim underwriting relies on accurately identifying high-risk profiles
 ├── model_columns.pkl           # One-hot encoded feature matrix references
 ├── model_options.pkl           # Valid categorical input mappings for UI
 └── README.md                   # Project documentation
-
+```
 ```
 
 ---
@@ -42,28 +41,29 @@ Insurance claim underwriting relies on accurately identifying high-risk profiles
 This section highlights key exploratory data analysis (EDA) findings and model interpretations that uncovered patterns in policyholder behavior and guided feature engineering.
 
 ### 1. Claim Rates by Key Categories
-
 This visualization breaks down the frequency of claims across different vehicle segments, fuel types, models, and region codes. It helps identify which categories carry the highest baseline risk, providing initial directions for premium adjustments.
 
+![Claim Rates Barchart](Data-Visualizations/Barchart.png)
 
 ### 2. Gaps in Claim Rates per Binary Features
-
 This chart illustrates the absolute difference in claim rates based on the presence or absence of specific binary vehicle features (e.g., speed alerts, parking sensors). It highlights which individual features act as the strongest indicators of a potential claim.
 
+![Gaps in Claim Rates](Data-Visualizations/Gaps%20in%20Claim%20Rates%20(Yes%20or%20No)%20per%20Binary%20features.png)
 
 ### 3. Feature Correlation Heatmap
-
 This correlation matrix visualizes the linear relationships between continuous numerical variables and the target variable (`claim_status`). It is crucial for identifying multicollinearity (such as the high correlation between vehicle dimensions like length, width, and displacement) and streamlining the features fed into the machine learning model.
 
+![Correlation Heatmap](Data-Visualizations/HeatMap.png)
 
 ### 4. Top 15 Feature Importance
-
 Extracted directly from our predictive model, this chart ranks the top 15 features that contribute most heavily to the model's decision-making process. This allows underwriters to quickly see exactly which variables matter most when assessing applicant risk.
 
+![Top 15 Feature Importance](Data-Visualizations/Top%2015%20Feature%20importance.png)
 
 ### 5. Distribution of Key Continuous Variables
-
 These histograms display the spread of critical continuous variables within our dataset, specifically analyzing `subscription_length`, `vehicle_age`, and `customer_age`. Understanding these distributions is vital for detecting skewness, understanding the core demographic of the customer base, and tailoring the data preprocessing pipeline.
+
+![Distribution Histograms](Data-Visualizations/histogram.png)
 
 
 ---
