@@ -69,11 +69,10 @@ Insurance claim underwriting relies on accurately identifying high-risk profiles
 ## 🚀 How to Run Locally
 
 1. **Clone the repository:**
-```bash
+
 git clone [https://github.com/Anshulworld/Insurance-Claims-Prediction-with-Machine-Learning-Python-Data-Science-Project.git](https://github.com/Anshulworld/Insurance-Claims-Prediction-with-Machine-Learning-Python-Data-Science-Project.git)
 cd Insurance-Claims-Prediction-with-Machine-Learning-Python-Data-Science-Project
 
-```
 
 
 2. **Install required dependencies:**
