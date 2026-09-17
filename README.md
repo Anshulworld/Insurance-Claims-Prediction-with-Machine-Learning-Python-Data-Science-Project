@@ -143,6 +143,4 @@ http://localhost:8501
 
 You can now interact with the UI, input applicant data, and view real-time risk predictions!
 
-```
 
-```
